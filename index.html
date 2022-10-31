@@ -1,3 +1,89 @@
+---
+tag_line: Software Engineer · Agile Coach
+intro_paragraphs:
+    - Ich helfe Unternehmen dabei, ihre Kunden mit digitalen Produkten glücklich zu machen.
+    - Mein Angebot umfasst Web-Entwicklung, Technische Beratung und Agile Coaching. Zusammen mit meinem Team bei <a href="https://zyklum.de/">zyklum</a> bin ich auch in der Lage, Projekte aus einer Hand anzubieten.
+about_title: Über Mich
+experience_title: Erfahrung
+education_title: Ausbildung
+skills_title: Fähigkeiten
+imprint_title: Kontakt & Impressum
+about_section:
+    - heading: Software-Entwicklung
+      text: Mein Schwerpunkt liegt in der Backend-Endwicklung von Web-Applikationen mit Ruby und Python. Nachhaltige Qualität ist mir wichtig, und setze dabei auf Konzepte wie TDD, SOLID und Hexagonale Architektur. Essenziell ist auch die Zusammenarbeit mit Domänenexperten, hierbei hilft vor allem Domain Driven Design.
+    - heading: Agile Coaching
+      text: Ich unterstütze Organisationen, "agiler" zu werden. Ich besitze eine ideologiefreie, pragmatische Auffassung von Agilität und mein operativer Background hilft mir dabei, die Herausforderungen von komplexen Domänen wie bspw. Produktentwicklung zu verstehen und diesen geeignet zu begegnen.
+    - heading: Was andere sagen über mich sagen
+      text: Siehe <a href="https://www.linkedin.com/in/jzernisch/details/recommendations/?detailScreenTabIndex=0">hier</a>.
+jobs:
+    - role: Co-Founder
+      company_name: zyklum
+      company_logo: assets/img/zyklum.jpeg
+      company_url: https://zyklum.de/
+      timeframe: März 2020 - Oktober 2021
+      description: Individuelle Software-Lösungen für kleine und mittelständische Unternehmen.
+    - role: Senior Software Engineer
+      company_name: PwC Deutschland GmbH
+      company_logo: assets/img/pwc.jpeg
+      company_url: https://www.pwc.de/
+      timeframe: Januar 2022 - September 2022
+      description: Mitentwicklung einer Chatbot-Plattform als Service für die 12000 Mitarbeiter von PwC Deutschland, welche es ermöglicht, zu einem gegebenen Kontext einen neuen Chatbot mit minimalem Aufwand bereitzustellen. Verwendet wurde Python/RASA und Docker/Kubernetes, gestützt durch maschinelles Lernen und künstlicher Intelligenz.
+    - role: Agile Coach
+      company_name: PwC Deutschland GmbH
+      company_logo: assets/img/pwc.jpeg
+      company_url: https://www.pwc.de/
+      timeframe: März 2020 - Oktober 2021
+      description: Organisationsentwicklung und Coaching. Entwicklung einer wertstrom-basierten Organisation, Förderung von Business Agilität Einführung von OKRs und Kanban Flight Levels. Teamcoaching, Individualcoaching für Scrum Master and Product Owner, Leadership Coaching.
+    - role: Senior Consultant Digital Transformation
+      company_name: Valtech Mobility
+      company_logo: assets/img/valtech-mobility.jpeg
+      company_url: https://valtech-mobility.de
+      timeframe: Januar 2019 - Dezember 2020
+      description: Digitale Lösungen rund um das vernetzte Auto. Agile Coach für Softwareentwicklungsteams und Interim Product Owner.
+    - role: Software Engineer und Scrum Master
+      company_name: InVision AG
+      company_logo: assets/img/invision.jpeg
+      company_url: https://www.ivx.com/
+      timeframe: Juli 2011 - November 2018
+      description: Entwicklung des Produkts "injixo", einer Rundum-Software-Lösung für Forecasting und Mitarbeiterplanung in Call Centern und Contact Centern. Erstellung vollautomatischer Forecasts für Anrufaufkommen basierend auf maschinellem Lernen.
+    - role: Software Engineer
+      company_name: Forschungsinstitut für Diskrete Mathematik der Universität Bonn
+      company_logo: assets/img/uni-bonn.svg
+      company_url: https://www.uni-bonn.de/de
+      timeframe: April 2009 - Oktober 2010
+      description: Konzeption und Implementierung von Algorithmen für das Design von VLSI Mikrochips, insbesondere für das "Port-Assignment Problem".
+education:
+    - institution_name: Universität Bonn
+      degree: Diplom
+      title: Mathematik mit Nebenfach Informatik
+      description: Note&#58; "Sehr gut" (1.5)
+      timeframe: Oktober 2003 - Februar 2011
+skills:
+    - category_name: Software-Entwicklung
+      category_skills:
+        - Ruby
+        - Python
+        - PostgreSQL
+        - RabbitMQ
+        - Git
+        - Docker
+        - TDD
+        - CI/CD
+        - DDD
+        - Architektur
+    - category_name: Agile Konzepte und Methodologien
+      category_skills:
+        - Scrum
+        - LeSS
+        - Kanban
+        - OKRs
+        - Flight Levels
+        - Lean
+        - User Story Mapping
+
+---
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -24,11 +110,11 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Über mich</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Erfahrung</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Ausbildung</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Fähigkeiten</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#imprint">Kontakt & Impressum</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">{{ page.about_title }}</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">{{ page.experience_title }}</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">{{ page.education_title }}</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">{{ page.skills_title }}</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#imprint">{{ page.imprint_title }}</a></li>
                 </ul>
             </div>
         </nav>
@@ -37,15 +123,13 @@
             <section class="resume-section" id="intro">
                 <div class="resume-section-content">
                     <h1 class="mb-0">
-                        Jan
-                        <span class="text-primary">Zernisch</span>
+                        Jan<span class="text-primary">Zernisch</span>
                     </h1>
-                    <div class="subheading mb-5">
-                        Software Engineer · Agile Coach
-                    </div>
-                    <p class="lead">Ich helfe Unternehmen dabei, ihre Kunden mit digitalen Produkten glücklich zu machen.</p>
-                    <p class="lead mb-5">Mein Angebot umfasst Web-Entwicklung, Technische Beratung und Agile Coaching. Zusammen mit meinem Team bei <a href="https://zyklum.de/">zyklum</a> bin ich auch in der Lage, Projekte aus einer Hand anzubieten.</p>
-                    <div class="social-icons mb-5">
+                    <div class="subheading mb-5">{{ page.tag_line }}</div>
+                    {% for paragraph in page.intro_paragraphs %}
+                    <p class="lead">{{ paragraph }}</p>
+                    {% endfor %}
+                    <div class="social-icons mt-5 mb-5">
                         <a class="social-icon" href="https://www.linkedin.com/in/jzernisch/"><i class="fab fa-linkedin-in"></i></a>
                         <a class="social-icon" href="https://github.com/jzernisch/"><i class="fab fa-github"></i></a>
                     </div>
@@ -54,138 +138,73 @@
             <!-- About-->
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Über mich</h2>
-                    <div class="subheading mb-3">Software-Entwicklung</div>
-                    Mein Schwerpunkt liegt in der Backend-Endwicklung von Web-Applikationen mit Ruby und Python. Nachhaltige Qualität ist mir wichtig, und setze dabei auf Konzepte wie TDD, SOLID und Hexagonale Architektur. Essenziell ist auch die Zusammenarbeit mit Domänenexperten, hierbei hilft vor allem Domain Driven Design.
-                    </p>
-                    <div class="subheading mb-3">Agile Coaching</div>
-                    Ich unterstütze Organisationen, "agiler" zu werden. Ich besitze eine ideologiefreie, pragmatische Auffassung von Agilität und mein operativer Background hilft mir dabei, die Herausforderungen von komplexen Domänen wie bspw. Produktentwicklung zu verstehen und diesen geeignet zu begegnen.
-                    </p>
-                    <div class="subheading mb-3">Was andere sagen über mich sagen</div>
-                    <p class="mb-5">Siehe <a href="https://www.linkedin.com/in/jzernisch/details/recommendations/?detailScreenTabIndex=0">hier</a>.</p>
+                    <h2 class="mb-5">{{ page.about_title }}</h2>
+                    {% for section in page.about_section %}
+                    <div class="subheading mb-3">{{ section.heading }}</div>
+                    <p>{{ section.text }}</p>
+                    {% endfor %}
                 </div>
             </section>
             <hr class="m-0" />
             <section class="resume-section" id="experience">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Erfahrung</h2>
+                    <h2 class="mb-5">{{ page.experience_title }}</h2>
+
+                    {% for job in page.jobs %}
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Co-Founder</h3>
+                            <h3 class="mb-0">{{ job.role }}</h3>
                             <div class="subheading mb-3">
-                                <a href="https://zyklum.de/"><img class="company-logo" src="assets/img/zyklum.jpeg"></img></a>zyklum
+                                <a href="{{ job.company_url }}"><img class="company-logo" src="{{ job.company_logo }}"></img></a>{{ job.company_name }}
                             </div>
-                            <p>Individuelle Software-Lösungen für kleine und mittelständische Unternehmen</p>
+                            <p>{{ job.description }}</p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Oktober 2022 - jetzt</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">{{ job.timeframe }}</span></div>
                     </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Senior Software Engineer </h3>
-                            <div class="subheading mb-3">
-                                <a href="https://www.pwc.de/"><img class="company-logo" src="assets/img/pwc.jpeg"></img></a>PwC Deutschland GmbH
-                            </div>
-                            <p>Mitentwicklung einer Chatbot-Plattform als Service für die 12000 Mitarbeiter von PwC Deutschland, welche es ermöglicht, zu einem gegebenen Kontext einen neuen Chatbot mit minimalem Aufwand bereitzustellen. Technologien: Python/RASA und Docker/Kubernetes, gestützt durch maschinelles Lernen und künstlicher Intelligenz.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Januar 2022 - September 2022</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Agile Coach</h3>
-                            <div class="subheading mb-3">
-                                <a href="https://www.pwc.de/"><img class="company-logo" src="assets/img/pwc.jpeg"></img></a>PwC Deutschland GmbH
-                            </div>
-                            <p>Organisationsentwicklung und Coaching. Entwicklung einer wertstrom-basierten Organisation, Förderung von Business Agilität Einführung von OKRs und Kanban Flight Levels.
-                                Teamcoaching, Individualcoaching für Scrum Master and Product Owner, Leadership Coaching.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">März 2020 - Dezember 2021</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Senior Consultant Digital Transformation</h3>
-                            <div class="subheading mb-3">
-                                <a href="https://valtech-mobility.de/"><img class="company-logo" src="assets/img/valtech-mobility.jpeg"></img></a>Valtech Mobility GmbH
-                            </div>
-                            <p>Digitale Lösungen rund um das vernetzte Auto. Agile Coach für Softwareentwicklungsteams und Interim Product Owner.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Januar 2019 - Februar 2020</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Software Engineer und Scrum Master</h3>
-                            <div class="subheading mb-3">
-                                <a href="https://www.ivx.com/"><img class="company-logo" src="assets/img/invision.jpeg"></img></a>InVision AG
-                            </div>
-                            <p>Entwicklung des Produkts "injixo", einer Rundum-Software-Lösung für Forecasting und Mitarbeiterplanung in Call Centern und Contact Centern. Erstellung vollautomatischer Forecasts für Anrufaufkommen basierend auf maschinellem Lernen.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Juli 2011 - November 2018</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Software Engineer</h3>
-                            <div class="subheading mb-3">
-                                <a href="https://www.uni-bonn.de/de"><img class="company-logo" src="assets/img/uni-bonn.svg"></img></a>Forschungsinstitut für Diskrete Mathematik der Universität Bonn
-                            </div>
-                            <p>Konzeption und Implementierung von Algorithmen für das Design von VLSI Mikrochips, insbesondere für das "Port-Assignment Problem".</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">April 2009 - Oktober 2010</span></div>
-                    </div>
+                    {% endfor %}
                 </div>
             </section>
             <hr class="m-0" />
             <!-- Education-->
             <section class="resume-section" id="education">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Ausbildung</h2>
+                    <h2 class="mb-5">{{ page.education_title }}</h2>
+                    {% for item in page.education %}
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Universität Bonn</h3>
-                            <div class="subheading mb-3">Diplom</div>
-                            <div>Mathematik mit Nebenfach Informatik</div>
-                            <p>Note: "Sehr gut" (1.5)</p>
+                            <h3 class="mb-0">{{ item.institution_name }}</h3>
+                            <div class="subheading mb-3">{{ item.degree }}</div>
+                            <div>{{ item.title }}</div>
+                            <p>{{ item.description }}</p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Oktober 2003 - Februar 2011</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">{{ item.timeframe }}</span></div>
                     </div>
+                    {% endfor %}
                 </div>
             </section>
             <hr class="m-0" />
             <!-- Skills-->
             <section class="resume-section" id="skills">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Fähigkeiten</h2>
-                    <div class="subheading mb-3">Software-Entwicklung</div>
+                    <h2>{{ page.skills_title }}</h2>
+                    {% for category in page.skills %}
+                    <div class="subheading mb-3 mt-5">{{ category.category_name }}</div>
                     <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><span class="badge bg-secondary">Ruby</span></li>
-                        <li class="list-inline-item"><span class="badge bg-secondary">Python</span></li>
-                        <li class="list-inline-item"><span class="badge bg-secondary">PostgreSQL</span></li>
-                        <li class="list-inline-item"><span class="badge bg-secondary">RabbitMQ</span></li>
-                        <li class="list-inline-item"><span class="badge bg-secondary">Git</span></li>
-                        <li class="list-inline-item"><span class="badge bg-secondary">Docker</span></li>
-                        <li class="list-inline-item"><span class="badge bg-secondary">TDD</span></li>
-                        <li class="list-inline-item"><span class="badge bg-secondary">CI/CD</span></li>
-                        <li class="list-inline-item"><span class="badge bg-secondary">DDD</span></li>
-                        <li class="list-inline-item"><span class="badge bg-secondary">Architektur</span></li>
+                    {% for skill in category.category_skills %}
+                    <li class="list-inline-item"><span class="badge bg-secondary">{{ skill }}</span></li>
+                    {% endfor %}
                     </ul>
-                    <div class="subheading mb-3 mt-5">Agile Konzepte und Methodologien</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><span class="badge bg-secondary">Scrum</span></li>
-                        <li class="list-inline-item"><span class="badge bg-secondary">LeSS</span></li>
-                        <li class="list-inline-item"><span class="badge bg-secondary">Kanban</span></li>
-                        <li class="list-inline-item"><span class="badge bg-secondary">OKRs</span></li>
-                        <li class="list-inline-item"><span class="badge bg-secondary">Flight Levels</span></li>
-                        <li class="list-inline-item"><span class="badge bg-secondary">Lean</span></li>
-                        <li class="list-inline-item"><span class="badge bg-secondary">User Story Mapping</span></li>
-                    </ul>
+                    {% endfor %}
                 </div>
             </section>
             <hr class="m-0" />
             <section class="resume-section" id="imprint">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Kontakt & Impressum</h2>
+                    <h2 class="mb-5">{{ page.imprint_title }}</h2>
                     <p>
                         <b>Jan Zernisch</b><br>
                         Dürerweg 3a<br>
-                        40724 Hilden
+                        D-40724 Hilden
                     </p>
                     <p>
                         jan.zernisch<i class="fa-solid fa-at"></i>gmail.com
