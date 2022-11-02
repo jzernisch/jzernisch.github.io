@@ -4059,6 +4059,11 @@ textarea.form-control-lg {
   padding-right: 0;
   padding-left: 0;
 }
+
+.nav-item-lang {
+    text-decoration: none;
+}
+
 .navbar-nav .dropdown-menu {
   position: static;
 }
