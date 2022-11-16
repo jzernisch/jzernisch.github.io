@@ -32,6 +32,7 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">{{ page.education_title }}</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">{{ page.skills_title }}</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#imprint">{{ page.imprint_title }}</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#privacy_policy">{{ page.privacy_policy_title }}</a></li>
                     {% if page.lang == "de" %}
                     <li>
                         <a class="nav-link nav-item-lang" href="/"><b>DE</b></a>  <a class="nav-link nav-item-lang" href="/en/">EN</a>
@@ -138,6 +139,13 @@
                         <a class="social-icon" href="https://github.com/jzernisch/"><i class="fab fa-github"></i></a>
                         <span>
                     </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <section class="resume-section" id="privacy_policy">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">{{ page.privacy_policy_title }}</h2>
+                    {% include privacy_policy.html %}
                 </div>
             </section>
             <hr class="m-0" />
