@@ -33,15 +33,13 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">{{ page.skills_title }}</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#imprint">{{ page.imprint_title }}</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#privacy_policy">{{ page.privacy_policy_title }}</a></li>
-                    {% if page.lang == "de" %}
                     <li>
-                        <a class="nav-link nav-item-lang" href="/"><b>DE</b></a>  <a class="nav-link nav-item-lang" href="/en/">EN</a>
+                        {% if page.lang == "de" %}
+                        <a class="nav-link" href="/en/">🇬🇧</a>
+                        {% else %}
+                        <a class="nav-link" href="/">🇩🇪</a>
+                        {% endif %}
                     </li>
-                    {% else %}
-                    <li>
-                        <a class="nav-link nav-item-lang" href="/">DE</a>  <a class="nav-link nav-item-lang" href="/en/"><b>EN</b></a>
-                    </li>
-                    {% endif %}
                 </ul>
             </div>
         </nav>
