@@ -62,13 +62,13 @@
                     <b>{{ page.cv_header }}: </b>
                     <ul>
                         <li>
-                            <a href="https://drive.google.com/file/d/{{ page.cv_pdf_id }}/preview" target="_blank"> {{ page.cv_preview_label }} </a>
+                            <a href="{{ page.cv_pdf_path }}" target="_blank"> {{ page.cv_preview_label }} </a>
                         </li>
                         <li>
-                            <a href="https://drive.google.com/uc?export=download&id={{ page.cv_pdf_id }}" download> {{ page.cv_pdf_label }} </a>
+                            <a href="{{ page.cv_pdf_path }}" download> {{ page.cv_pdf_label }} </a>
                         </li>
                         <li>
-                            <a href="https://drive.google.com/uc?export=download&id={{ page.cv_word_id }}" download> {{ page.cv_word_label }} </a>
+                            <a href="{{ page.cv_word_path }}" download> {{ page.cv_word_label }} </a>
                         </li>
                     </ul>
                 </div>
